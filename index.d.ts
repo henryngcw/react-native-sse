@@ -67,6 +67,7 @@ declare class EventSource<E extends string = never> {
   removeEventListener(type: E | EventType, listener: EventSourceListener<E>): void;
   removeAllEventListeners(type?: E | EventType): void;
   dispatch(type: E | EventType, data: E | EventSourceEvent): void;
+  testing(): void;
 }
 
 export default EventSource;

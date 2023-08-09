@@ -18,11 +18,11 @@ class EventSource {
       close: [],
     };
 
-    this.method = options.method || 'GET';
-    this.timeout = options.timeout || 0;
-    this.headers = options.headers || {};
-    this.body = options.body || undefined;
-    this.debug = options.debug || false;
+    this.method = options.method ?? 'GET';
+    this.timeout = options.timeout ?? 0;
+    this.headers = options.headers ?? {};
+    this.body = options.body ?? undefined;
+    this.debug = options.debug ?? false;
     this.timeoutBeforeConnection = options.timeoutBeforeConnection ?? 500;
 
     this._xhr = null;
